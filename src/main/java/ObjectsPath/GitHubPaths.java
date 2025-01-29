@@ -12,4 +12,6 @@ public class GitHubPaths {
     public static final By products = By.xpath("/html/body/div[1]/div[3]/header/div/div[2]/div/nav/ul/li[1]/button");
     public static final By copilot = By.xpath("/html/body/div[1]/div[3]/header/div/div[2]/div/nav/ul/li[1]/div/div[1]/div/ul/li[1]/a");
 
+
+
 }
