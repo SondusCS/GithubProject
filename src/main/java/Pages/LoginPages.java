@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import static ObjectsPath.GitHubPaths.*;
+import static ObjectsPath.LoginPaths.*;
 
 public class LoginPages {
     WebDriver driver = null;
@@ -22,27 +23,23 @@ public class LoginPages {
         SignInBtn.click();
 
     }
+    public void fillEmail(){
 
-    public void clickOnSignUpBtn(){
-        WebElement signUpBtn = driver.findElement(signUp);
-        signUpBtn.click();
+        WebElement Email = driver.findElement(username);
+        Email.sendKeys("sondusalenazi@gmail.com");
+
+    }
+    public void fillPassword(){
+
+        WebElement Password = driver.findElement(password);
+        Password.sendKeys("Sondus27@");
 
     }
 
-    public void clickOnTermsOfServices(){
-        WebElement ToS = driver.findElement(termsOfService);
-        ToS.click();
+    public void clickOn(){
 
-
+        WebElement SignInBtn = driver.findElement(signInBtn);
+        SignInBtn.click();
     }
 
-    public void clickOnProducts(){
-        WebElement product = driver.findElement(products);
-        product.click();
-    }
-
-    public void clickOnCopilot(){
-        WebElement Copilot = driver.findElement(copilot);
-        Copilot.click();
-    }
 }
